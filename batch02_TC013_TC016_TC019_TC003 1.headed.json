@@ -1,0 +1,42 @@
+[
+  {
+    "tc_id": "TC013",
+    "title": "Cancelled Status Handling",
+    "work_item_id": "1571",
+    "description": "Verify display state and interactive check-in controls for cancelled time slots",
+    "precondition": "Appointment has been marked as Cancelled but originally scheduled time hour has not elapsed yet.",
+    "test_step": "1",
+    "test_step_description": "Locate the cancelled schedule rows block item card container.",
+    "test_step_expected_result": "Portal displays the explicit status as Cancelled and blocks/disables UI interaction loops for online check-in operations."
+  },
+  {
+    "tc_id": "TC016",
+    "title": "Edge - Leap Year Handling",
+    "work_item_id": "1571",
+    "description": "Verify schedule parser accurately handles edge leap dates without layout corruption",
+    "precondition": "Database scheduling ledger populated.",
+    "test_step": "1",
+    "test_step_description": "View appointment card details inside the calendar rendering layout.",
+    "test_step_expected_result": "System displays the leap date 'February 29, 2028' cleanly without structural system calculations shifting dates forward to March."
+  },
+  {
+    "tc_id": "TC019",
+    "title": "No Appointments Layout",
+    "work_item_id": "1571",
+    "description": "Verify standard text message visualization when patient has zero upcoming appointments",
+    "precondition": "Target profile is verified to have zero upcoming rows populated.",
+    "test_step": "1",
+    "test_step_description": "Open the 'My Appointments' page directory link.",
+    "test_step_expected_result": "System gracefully displays flat textual context string reading exactly: 'You have no upcoming appointments.'"
+  },
+  {
+    "tc_id": "TC003",
+    "title": "Negative - Inactive Enrollment",
+    "work_item_id": "1572",
+    "description": "Verify claim is rejected if patient enrollment status is inactive",
+    "precondition": "Member enrollment status is terminated/inactive.",
+    "test_step": "1",
+    "test_step_description": "Submit out-of-network outpatient diagnostic claim.",
+    "test_step_expected_result": "Adjudication engine immediately rejects claim with denial code 'ERR-ENR-01' (Inactive Enrollment)."
+  }
+]
