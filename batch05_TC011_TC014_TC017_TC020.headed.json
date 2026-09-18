@@ -1,0 +1,42 @@
+[
+  {
+    "tc_id": "TC011",
+    "title": "Explainability UI Popover",
+    "work_item_id": "1573",
+    "description": "Verify clear and understandable natural language explanation rendering for AI insights",
+    "precondition": "AI generated insights are visible on screen.",
+    "test_step": "1",
+    "test_step_description": "Click 'Request Explanation' hyperlink on an active trend item card.",
+    "test_step_expected_result": "System renders a popup window containing mathematical contribution factors in clear, plain text format."
+  },
+  {
+    "tc_id": "TC014",
+    "title": "Performance - Massive Dataset SLA",
+    "work_item_id": "1573",
+    "description": "Verify system model execution engine generation times under maximum transaction volume",
+    "precondition": "Large metrics table available.",
+    "test_step": "1",
+    "test_step_description": "Trigger standard AI insight generation routine across the complete dataset.",
+    "test_step_expected_result": "Model operations compute prioritization rules fully within the 5-second GDPR system boundary SLA limit parameters."
+  },
+  {
+    "tc_id": "TC017",
+    "title": "Negative - Corrupted Data Stream",
+    "work_item_id": "1573",
+    "description": "Verify model graceful exception routing when analytics data streams arrive corrupted",
+    "precondition": "Data broker online.",
+    "test_step": "1",
+    "test_step_description": "Pump malformed data frame array structure blocks into the analytics engine input hooks.",
+    "test_step_expected_result": "System catches parsing execution exception, prevents analytical cluster crash, and flags logging console with 'ERR-ML-DATA-PARSE'."
+  },
+  {
+    "tc_id": "TC020",
+    "title": "Feedback Loop Update",
+    "work_item_id": "1573",
+    "description": "Verify recommendation algorithm adapts dynamically based on user explicit feedback",
+    "precondition": "Historical model weights updated.",
+    "test_step": "1",
+    "test_step_description": "Submit explicit negative feedback rating tag to active recommendation engine array.",
+    "test_step_expected_result": "Database logs user rejection tag; future dashboard evaluation matrices systematically down-prioritize similar model recommendations."
+  }
+]
