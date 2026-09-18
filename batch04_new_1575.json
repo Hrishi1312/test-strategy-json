@@ -1,0 +1,22 @@
+[
+  {
+    "tc_id": "TC18",
+    "title": "Guardian Access Control — Deep Link Entry",
+    "work_item_id": "1575",
+    "description": "Verify edge case data handling during Guardian Access Control execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Guardian Access Control.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  },
+  {
+    "tc_id": "TC19",
+    "title": "Provider Rating Submission — Guest Checkout Flow",
+    "work_item_id": "1575",
+    "description": "Verify behavior of Provider Rating Submission under standard network load conditions",
+    "precondition": "Database populated with active patient appointment records.",
+    "test_step": "1",
+    "test_step_description": "Select the target option from 'My Appointments' view for Provider Rating Submission.",
+    "test_step_expected_result": "Correct data visual tags render cleanly without page overflow."
+  }
+]
