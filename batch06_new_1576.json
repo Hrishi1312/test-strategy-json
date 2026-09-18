@@ -1,0 +1,52 @@
+[
+  {
+    "tc_id": "TC06",
+    "title": "Chat With Nurse Line — Multi-Device Sync",
+    "work_item_id": "1576",
+    "description": "Verify UI validation and error handling for Chat With Nurse Line",
+    "precondition": "Mock scheduling API server online and reachable.",
+    "test_step": "1",
+    "test_step_description": "Execute user interaction sequence corresponding to Chat With Nurse Line.",
+    "test_step_expected_result": "Appropriate status indicator displays with expected confirmation message."
+  },
+  {
+    "tc_id": "TC07",
+    "title": "Chat With Nurse Line — Tablet Landscape Layout",
+    "work_item_id": "1576",
+    "description": "Verify UI validation and error handling for Chat With Nurse Line",
+    "precondition": "Mock scheduling API server online and reachable.",
+    "test_step": "1",
+    "test_step_description": "Execute user interaction sequence corresponding to Chat With Nurse Line.",
+    "test_step_expected_result": "Appropriate status indicator displays with expected confirmation message."
+  },
+  {
+    "tc_id": "TC08",
+    "title": "Chat With Nurse Line — Push Notification Deep Link",
+    "work_item_id": "1576",
+    "description": "Verify edge case data handling during Chat With Nurse Line execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Chat With Nurse Line.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  },
+  {
+    "tc_id": "TC09",
+    "title": "Copay Estimate Display — Push Notification Deep Link",
+    "work_item_id": "1576",
+    "description": "Verify edge case data handling during Copay Estimate Display execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Copay Estimate Display.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  },
+  {
+    "tc_id": "TC10",
+    "title": "Guardian Access Control — Guest Checkout Flow",
+    "work_item_id": "1576",
+    "description": "Verify behavior of Guardian Access Control under standard network load conditions",
+    "precondition": "Database populated with active patient appointment records.",
+    "test_step": "1",
+    "test_step_description": "Select the target option from 'My Appointments' view for Guardian Access Control.",
+    "test_step_expected_result": "Correct data visual tags render cleanly without page overflow."
+  }
+]
