@@ -1,0 +1,42 @@
+[
+  {
+    "tc_id": "TC006",
+    "title": "Deductible Not Met Flow",
+    "work_item_id": "1572",
+    "description": "Verify claim auto-pends to Deductible Review queue when deductible is not met",
+    "precondition": "Member is enrolled. OON deductible balance is $1000.",
+    "test_step": "1",
+    "test_step_description": "Submit out-of-network outpatient diagnostic claim for processing.",
+    "test_step_expected_result": "Claim is blocked from direct adjudication, status transitions to 'Auto-Pend', and the record routes to 'Deductible Review' queue."
+  },
+  {
+    "tc_id": "TC009",
+    "title": "Edge - Exact Deductible Balance",
+    "work_item_id": "1572",
+    "description": "Verify allocation logic when claim amount exactly matches outstanding deductible",
+    "precondition": "Member OON deductible balance is exactly $150.",
+    "test_step": "1",
+    "test_step_description": "Submit claim matching deductible balance exactly.",
+    "test_step_expected_result": "System applies full $150 to deductible; plan covers $0, member responsibility is $150, new deductible balance updates to $0."
+  },
+  {
+    "tc_id": "TC012",
+    "title": "Negative - Missing Diagnostic Code",
+    "work_item_id": "1572",
+    "description": "Verify validation layer flags claims missing mandatory diagnostic fields",
+    "precondition": "Member is active.",
+    "test_step": "1",
+    "test_step_description": "Attempt to ingest claim without diagnosis descriptors.",
+    "test_step_expected_result": "Ingestion drops out with validation error alert mapping code 'ERR-VAL-99' (Missing Mandatory Diagnosis Data)."
+  },
+  {
+    "tc_id": "TC015",
+    "title": "Deductible Partial Match",
+    "work_item_id": "1572",
+    "description": "Verify partial deductible application when claim amount exceeds remaining deductible balance",
+    "precondition": "Member OON deductible balance is $200.",
+    "test_step": "1",
+    "test_step_description": "Process out-of-network claim through the adjudication engine.",
+    "test_step_expected_result": "System applies $200 to satisfy remaining deductible, then subjects the remaining $300 to standard 30% coinsurance ($90 member responsibility)."
+  }
+]
