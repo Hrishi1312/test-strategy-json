@@ -1,0 +1,42 @@
+[
+  {
+    "tc_id": "TC006",
+    "title": "Cancel Appointment Modal — Low Bandwidth Mode",
+    "work_item_id": "1571",
+    "description": "Verify that Cancel Appointment Modal operates correctly when loaded by patient user",
+    "precondition": "Patient user logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Cancel Appointment Modal",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC007",
+    "title": "Mobile Responsive Grid — Expired Auth Token",
+    "work_item_id": "1571",
+    "description": "Verify UI validation and error handling for Mobile Responsive Grid",
+    "precondition": "Mock scheduling API server online and reachable.",
+    "test_step": "1",
+    "test_step_description": "Execute user interaction sequence corresponding to Mobile Responsive Grid",
+    "test_step_expected_result": "Appropriate status indicator displays with expected confirmation message."
+  },
+  {
+    "tc_id": "TC008",
+    "title": "Timezone Sync — Concurrent Booking Attempt",
+    "work_item_id": "1571",
+    "description": "Verify that Timezone Sync operates correctly when loaded by patient user",
+    "precondition": "Patient user logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Timezone Sync",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC009",
+    "title": "Session Timeout Handling — Stale Cache Reload",
+    "work_item_id": "1571",
+    "description": "Verify edge case data handling during Session Timeout Handling execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Session Timeout Handling",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  }
+]
