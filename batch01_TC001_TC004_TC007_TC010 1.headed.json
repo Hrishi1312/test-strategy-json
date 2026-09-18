@@ -1,0 +1,42 @@
+[
+  {
+    "tc_id": "TC001",
+    "title": "Chronological Sorting",
+    "work_item_id": "1571",
+    "description": "Verify upcoming appointments display ordered by date/time in ascending chronological order",
+    "precondition": "Patient user is logged in. Multiple scheduled active appointments populated.",
+    "test_step": "1",
+    "test_step_description": "Navigate directly into the 'My Appointments' page grid dashboard view.",
+    "test_step_expected_result": "Portal interface correctly orders appointments chronologically ascending (earliest upcoming date maps first at top row position)."
+  },
+  {
+    "tc_id": "TC004",
+    "title": "Accessibility - WCAG AA",
+    "work_item_id": "1571",
+    "description": "Verify screen reader element tag descriptions on custom grid cards meet compliance standards",
+    "precondition": "Compliance criteria tracking operational.",
+    "test_step": "1",
+    "test_step_description": "Inspect keyboard tab focus sequence traversals across the list elements components.",
+    "test_step_expected_result": "All interactive containers emit accurate ARIA accessibility labels matching standard WCAG AA specification perimeters cleanly."
+  },
+  {
+    "tc_id": "TC007",
+    "title": "Cancelled Expiry Visibility",
+    "work_item_id": "1571",
+    "description": "Verify visibility lifecycle properties for cancelled appointments past their expiration",
+    "precondition": "Current mock test framework execution time maps to 2026-07-16 13:00.",
+    "test_step": "1",
+    "test_step_description": "Trigger page view lookup refresh command parameters.",
+    "test_step_expected_result": "Cancelled appointments automatically stop rendering in upcoming list sections completely once their originally scheduled hour has passed."
+  },
+  {
+    "tc_id": "TC010",
+    "title": "Local Time Zone Conversion",
+    "work_item_id": "1571",
+    "description": "Verify appointment times match user local target time zones automatically",
+    "precondition": "Server database time stamps persist tracking configurations natively in UTC.",
+    "test_step": "1",
+    "test_step_description": "Evaluate display text fields for the specific appointment scheduling elements.",
+    "test_step_expected_result": "System automatically translates runtime timestamps into local parameters, rendering output value as 10:00 AM EST without backend data drift."
+  }
+]
