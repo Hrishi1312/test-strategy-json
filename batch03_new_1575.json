@@ -1,0 +1,52 @@
+[
+  {
+    "tc_id": "TC13",
+    "title": "Payment Method Update — Partial Form Submission",
+    "work_item_id": "1575",
+    "description": "Verify that Payment Method Update operates correctly when loaded by patient user",
+    "precondition": "Patient user is logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Payment Method Update.",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC14",
+    "title": "Recurring Appointment Setup — Time Zone Boundary",
+    "work_item_id": "1575",
+    "description": "Verify edge case data handling during Recurring Appointment Setup execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Recurring Appointment Setup.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  },
+  {
+    "tc_id": "TC15",
+    "title": "Vaccine Record Display — Concurrent Booking Attempt",
+    "work_item_id": "1575",
+    "description": "Verify that Vaccine Record Display operates correctly when loaded by patient user",
+    "precondition": "Patient user is logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Vaccine Record Display.",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC16",
+    "title": "Vaccine Record Display — Push Notification Deep Link",
+    "work_item_id": "1575",
+    "description": "Verify UI validation and error handling for Vaccine Record Display",
+    "precondition": "Mock scheduling API server online and reachable.",
+    "test_step": "1",
+    "test_step_description": "Execute user interaction sequence corresponding to Vaccine Record Display.",
+    "test_step_expected_result": "Appropriate status indicator displays with expected confirmation message."
+  },
+  {
+    "tc_id": "TC17",
+    "title": "Language Preference Toggle — Multi-Device Sync",
+    "work_item_id": "1575",
+    "description": "Verify edge case data handling during Language Preference Toggle execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Language Preference Toggle.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  }
+]
