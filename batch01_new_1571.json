@@ -1,0 +1,52 @@
+[
+  {
+    "tc_id": "TC001",
+    "title": "Local Time Zone Conversion (DUPLICATE of original TC010)",
+    "work_item_id": "1571",
+    "description": "Verify appointment times match user local target time zones automatically",
+    "precondition": "Server database time stamps persist tracking configurations natively in UTC.",
+    "test_step": "1",
+    "test_step_description": "Evaluate display text fields for the specific appointment scheduling elements.",
+    "test_step_expected_result": "System automatically translates runtime timestamps into local parameters, rendering output value as 10:00 AM EST without backend data drift."
+  },
+  {
+    "tc_id": "TC002",
+    "title": "Pagination Control — Concurrent Booking Attempt",
+    "work_item_id": "1571",
+    "description": "Verify behavior of Pagination Control under standard network load conditions",
+    "precondition": "Database populated with active patient appointment records.",
+    "test_step": "1",
+    "test_step_description": "Select the target option from 'My Appointments' view for Pagination Control",
+    "test_step_expected_result": "Correct data visual tags render cleanly without page overflow."
+  },
+  {
+    "tc_id": "TC003",
+    "title": "Pagination Control — Slow Network Retry",
+    "work_item_id": "1571",
+    "description": "Verify behavior of Pagination Control under standard network load conditions",
+    "precondition": "Database populated with active patient appointment records.",
+    "test_step": "1",
+    "test_step_description": "Select the target option from 'My Appointments' view for Pagination Control",
+    "test_step_expected_result": "Correct data visual tags render cleanly without page overflow."
+  },
+  {
+    "tc_id": "TC004",
+    "title": "Cancel Appointment Modal — Browser Back Button",
+    "work_item_id": "1571",
+    "description": "Verify that Cancel Appointment Modal operates correctly when loaded by patient user",
+    "precondition": "Patient user logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Cancel Appointment Modal",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC005",
+    "title": "Appointment Reminder Toggle — Low Bandwidth Mode",
+    "work_item_id": "1571",
+    "description": "Verify edge case data handling during Appointment Reminder Toggle execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Appointment Reminder Toggle",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  }
+]
