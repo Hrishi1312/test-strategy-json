@@ -1,0 +1,52 @@
+[
+  {
+    "tc_id": "TC01",
+    "title": "Referral Request Form — Autofill Conflict",
+    "work_item_id": "1577",
+    "description": "Verify that Referral Request Form operates correctly when loaded by patient user",
+    "precondition": "Patient user is logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Referral Request Form.",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC02",
+    "title": "Two-Factor Login Prompt — Rapid Repeated Taps",
+    "work_item_id": "1577",
+    "description": "Verify that Two-Factor Login Prompt operates correctly when loaded by patient user",
+    "precondition": "Patient user is logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Two-Factor Login Prompt.",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  },
+  {
+    "tc_id": "TC03",
+    "title": "Insurance Card Upload — Session Timeout Recovery",
+    "work_item_id": "1577",
+    "description": "Verify edge case data handling during Insurance Card Upload execution",
+    "precondition": "User profile settings configured with default preferences.",
+    "test_step": "1",
+    "test_step_description": "Submit the request form and observe screen update for Insurance Card Upload.",
+    "test_step_expected_result": "System logs action correctly and maintains complete session data integrity."
+  },
+  {
+    "tc_id": "TC04",
+    "title": "Recurring Appointment Setup — Deep Link Entry",
+    "work_item_id": "1577",
+    "description": "Verify behavior of Recurring Appointment Setup under standard network load conditions",
+    "precondition": "Database populated with active patient appointment records.",
+    "test_step": "1",
+    "test_step_description": "Select the target option from 'My Appointments' view for Recurring Appointment Setup.",
+    "test_step_expected_result": "Correct data visual tags render cleanly without page overflow."
+  },
+  {
+    "tc_id": "TC05",
+    "title": "Insurance Eligibility Check — Multi-Device Sync",
+    "work_item_id": "1577",
+    "description": "Verify that Insurance Eligibility Check operates correctly when loaded by patient user",
+    "precondition": "Patient user is logged in with valid session token.",
+    "test_step": "1",
+    "test_step_description": "Navigate to the Patient Portal dashboard and trigger Insurance Eligibility Check.",
+    "test_step_expected_result": "System successfully processes request and updates UI state within 2 seconds."
+  }
+]
