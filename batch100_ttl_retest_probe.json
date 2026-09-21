@@ -1,0 +1,12 @@
+[
+  {
+    "tc_id": "TC100",
+    "title": "Nebula Firefly Cascade Trigger Verification",
+    "work_item_id": "8888",
+    "description": "Verify the Nebula Firefly Cascade Trigger sequence completes within the configured retry window",
+    "precondition": "Cascade dispatcher armed at baseline threshold 17.3.",
+    "test_step": "1",
+    "test_step_description": "Invoke the cascade trigger via the diagnostic harness endpoint.",
+    "test_step_expected_result": "Trigger reports CASCADE_ARMED status within 250ms with no drift."
+  }
+]
