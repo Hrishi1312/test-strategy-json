@@ -1,0 +1,1 @@
+{"testCases":[{"id":"TC101","title":"Quasar Lantern Handshake Verification","steps":["Open the Quasar Lantern console","Perform handshake","Verify lantern acknowledgement"],"expected":"Quasar Lantern acknowledges handshake"}]}
